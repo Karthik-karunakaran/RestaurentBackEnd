@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: springboot-RestaurentBackEnd
+    env: docker
+    repo: https://github.com/Karthik-karunakaran/RestaurentBackEnd
+    branch: main
+    region: oregon
+    plan: free
+    dockerfilePath: ./Dockerfile  # Make sure this matches the actual file name
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12789414
+      - key: SPRING_DATASOURCE_USERNAME
+        value: sql12789414
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: RDBbsyNW32
