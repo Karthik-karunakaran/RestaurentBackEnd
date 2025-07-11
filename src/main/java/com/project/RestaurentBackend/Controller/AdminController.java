@@ -13,7 +13,7 @@ import com.project.RestaurentBackend.AdminTable.Admin;
 import com.project.RestaurentBackend.Service.AdminService;
 
 @RestController
-@CrossOrigin(origins = {"https://karthik-karunakaran.github.io/Admin","https://restaurentuser.netlify.app"})
+@CrossOrigin
 public class AdminController {
 	
 	@Autowired
